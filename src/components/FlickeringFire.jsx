@@ -28,7 +28,7 @@ export default function FloatingAshes() {
     <div className="floating-ashes-container">
       {/* Ash particles container */}
       <div ref={ashRef} className="ash-container" />
-      
+      <h1 className="artist__name">Practically Paradise</h1>
     </div>
   );
 }

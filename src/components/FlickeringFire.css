@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Absolute Neon";
+  src: url("../assets/AbsoluteNeonScript 2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .floating-ashes-container {
   min-height: 100vh;
   display: flex;
@@ -12,6 +19,16 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
+}
+
+.artist__name {
+  position: relative;
+  top: 20px;
+  color: #0503036e;
+  font-family: "Absolute Neon", sans-serif;
+  font-size: 12.5rem;
+  text-shadow: 0 0 10px #f52bc3ab, 0 0 20px #ff00e3ab;
+  animation: textFlicker 2s infinite 0.3s alternate ease-in-out;
 }
 
 .ash-particle {
@@ -45,5 +62,49 @@
     transform: translateY(-100vh) translateX(var(--drift-x, 80px))
       rotate(720deg);
     opacity: 0;
+  }
+}
+
+@keyframes textFlicker {
+  0%,
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 10px #f52bc3ab, 0 0 20px #ff00e3ab, 0 0 30px #ff00e3ab;
+  }
+  10% {
+    opacity: 0.8;
+    text-shadow: 0 0 8px #f52bc3ab, 0 0 15px #ff00e3ab;
+  }
+  20% {
+    opacity: 1;
+    text-shadow: 0 0 12px #f52bc3ab, 0 0 25px #ff00e3ab, 0 0 35px #ff00e3ab;
+  }
+  30% {
+    opacity: 0.9;
+    text-shadow: 0 0 9px #f52bc3ab, 0 0 18px #ff00e3ab;
+  }
+  40% {
+    opacity: 0.7;
+    text-shadow: 0 0 6px #f52bc3ab, 0 0 12px #ff00e3ab;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 15px #f52bc3ab, 0 0 30px #ff00e3ab, 0 0 40px #ff00e3ab;
+  }
+  60% {
+    opacity: 0.85;
+    text-shadow: 0 0 10px #f52bc3ab, 0 0 20px #ff00e3ab;
+  }
+  70% {
+    opacity: 0.95;
+    text-shadow: 0 0 11px #f52bc3ab, 0 0 22px #ff00e3ab, 0 0 32px #ff00e3ab;
+  }
+  80% {
+    opacity: 0.75;
+    text-shadow: 0 0 7px #f52bc3ab, 0 0 14px #ff00e3ab;
+  }
+  90% {
+    opacity: 1;
+    text-shadow: 0 0 13px #f52bc3ab, 0 0 26px #ff00e3ab, 0 0 36px #ff00e3ab;
   }
 }
