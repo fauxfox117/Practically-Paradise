@@ -29,6 +29,22 @@
   font-size: 12.5rem;
   text-shadow: 0 0 10px #f52bc3ab, 0 0 20px #ff00e3ab;
   animation: textFlicker 2s infinite 0.3s alternate ease-in-out;
+  text-align: center;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+  .artist__name {
+    font-size: 10rem;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .artist__name {
+    font-size: 10rem;
+    padding: 0 15px;
+  }
 }
 
 .ash-particle {
